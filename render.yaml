@@ -1,0 +1,10 @@
+services:
+- type: web
+  name: business-copilot
+  env: docker
+  repo: https://github.com/твой-логин/business-copilot
+  dockerfilePath: ./Dockerfile
+  port: 8000
+  envVars:
+  - key: PORT
+    value: 8000
